@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import React from "react";
 // import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
-import { Facebook, Github, Twitter, YouTube } from "../components/AllSvgs";
+// import { Facebook, Github, Twitter, YouTube } from "../components/AllSvgs";
+import { Github, Twitter, Instagram, LinkedIn } from "../components/AllSvgs";
+
 import { DarkTheme } from "../components/Themes";
 
 const Icons = styled.div`
@@ -65,7 +67,26 @@ const SocialIcons = (props) => {
           />
         </a>
       </motion.div>
+
       <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.4 }}
+      >
+        <a
+          style={{ color: "inherit" }}
+          target="_blank"
+          href={"https://www.linkedin.com"}
+        >
+          <LinkedIn
+            width={25}
+            height={25}
+            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
+          />
+        </a>
+      </motion.div>
+
+      {/* <motion.div
         initial={{scale:0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.4 }}
@@ -81,8 +102,8 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </a>
-      </motion.div>
-      <motion.div
+      </motion.div> */}
+      {/* <motion.div
         initial={{scale:0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.6 }}
@@ -98,7 +119,28 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </a>
+      </motion.div> */}
+
+            <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.8 }}
+      >
+        <a
+          style={{ color: "inherit" }}
+          target="_blank"
+          href={"https://instagram.com/codebucks27"}
+        >
+          <Instagram
+            width={25}
+            height={25}
+            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
+          />
+        </a>
       </motion.div>
+
+
+      
 
       <Line
         color={props.theme}
@@ -106,7 +148,7 @@ const SocialIcons = (props) => {
           height: 0,
         }}
         animate={{
-          height: "8rem",
+          height: "22rem",
         }}
         transition={{
           type: "spring",

@@ -36,21 +36,21 @@ right: calc(1rem + 2vw);
 text-decoration: none;
 z-index:1;
 `
-const BLOG = styled(NavLink)`
-color: ${props => props.theme.text};
-position: absolute;
-top: 50%;
-right: calc(1rem + 2vw);
-transform: rotate(90deg) translate(-50%, -50%);
-text-decoration: none;
-z-index:1;
-`
+// const BLOG = styled(NavLink)`
+// color: ${props => props.theme.text};
+// position: absolute;
+// top: 50%;
+// right: calc(1rem + 2vw);
+// transform: rotate(90deg) translate(-50%, -50%);
+// text-decoration: none;
+// z-index:1;
+// `
 const WORK = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 
 position: absolute;
 top: 50%;
-left: calc(1rem + 2vw);
+right: calc(1rem + 2vw);
 transform: translate(-50%, -50%) rotate(-90deg) ;
 text-decoration: none;
 z-index:1;
@@ -71,11 +71,17 @@ const ABOUT = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 text-decoration: none;
 z-index:1;
+bottom: calc(1rem + 2vw);
+position: absolute;
+left:33%;
 `
 const SKILLS = styled(NavLink)`
 color: ${props => props.theme.text};
 text-decoration: none;
 z-index:1;
+bottom: calc(1rem + 2vw);
+position: absolute;
+left:66%;
 `
 
 const rotate = keyframes`
@@ -145,7 +151,7 @@ const Main = () => {
                 <span>click here</span>
             </Center>
 
-            <Contact target="_blank" href="mailto:codebucks27@gmail.com">
+            <Contact target="_blank" href="mailto:tauqeersyed927@gmail.com">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -159,10 +165,10 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Say hi..
+                    Mail me..
                 </motion.h2>
             </Contact>
-            <BLOG to="/blog">
+            {/* <BLOG to="/blog">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -177,7 +183,7 @@ const Main = () => {
                 >
                     Blog
                 </motion.h2>
-            </BLOG>
+            </BLOG> */}
             <WORK to="/work" click={+click}>
                 <motion.h2
                 initial={{
@@ -191,7 +197,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Work
+                    Projects
                 </motion.h2>
             </WORK>
             <BottomBar>
@@ -208,7 +214,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About.
+                    About
                 </motion.h2>
             </ABOUT>
             <SKILLS to="/skills">
@@ -224,7 +230,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    My Skills
                 </motion.h2>
             </SKILLS>
 
