@@ -72,14 +72,19 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-<br /> <br/>
-I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-<br/> <br/>
-I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+            <ul style={{ paddingLeft: "30px" }}>
+                <li> Hi there! I'm a passionate Front-End Developer with a knack for creating visually stunning and animated websites that bring ideas to life. 
+                <br /> <br/></li>
+                <li>With 1 year of experience at Tableau, I honed my skills in designing data-driven solutions and creating user-friendly interfaces. 
+                <br/> <br/></li>
+                <li>Currently, I’m diving into backend development with Spring Boot, expanding my expertise in building full-stack applications.</li>
+            </ul>
+       
+
+
         </Main>
 
-        <BigTitle text="ABOUT" top="10%" left="5%" />
+        <BigTitle text="ABOUT" top="05.5%" left="11%" />
 
 
         </Box>

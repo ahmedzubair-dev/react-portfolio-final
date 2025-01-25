@@ -26,7 +26,7 @@ const ParticlesComponent = (props) => {
     <Box>
       <Particles
         id="tsparticles"
-        style={{ position: "absolute", top: 0 }}
+        style={{ position: "absolute", top: 0 ,}}
         params={props.theme === "light" ? ConfigLight : ConfigDark}
         init={particlesInit} 
       />

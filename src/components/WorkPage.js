@@ -45,6 +45,7 @@ const container = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
+    zIndex:"1",
 
     transition: {
       staggerChildren: 0.5,

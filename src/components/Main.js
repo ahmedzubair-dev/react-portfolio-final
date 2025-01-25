@@ -32,7 +32,8 @@ const Contact = styled.a`
 color: ${props => props.theme.text};
 position: absolute;
 top: 2rem;
-right: calc(1rem + 2vw);
+right:7.1%;
+// right: calc(1rem + 2vw);
 text-decoration: none;
 z-index:1;
 `
@@ -50,7 +51,8 @@ color: ${props => props.click ? props.theme.body : props.theme.text};
 
 position: absolute;
 top: 50%;
-right: calc(1rem + 2vw);
+// right: calc(1rem + 2vw);
+right:-1.5%;
 transform: translate(-50%, -50%) rotate(-90deg) ;
 text-decoration: none;
 z-index:1;
@@ -148,7 +150,9 @@ const Main = () => {
            
             <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span>click here</span>
+                {/* <span>click here</span> */}
+                <span style={{ fontSize: "25px" }}>click here</span>
+
             </Center>
 
             <Contact target="_blank" href="mailto:tauqeersyed927@gmail.com">
